@@ -68,8 +68,7 @@ body
 
 .logo img
 {
-    width: 180px;
-    
+    width: 180px; 
 }
 
 .icons
@@ -194,6 +193,8 @@ body
     margin-right: 2px;
 }
 
+/* PROGRESS NUMBER */
+
 .steps
 {
     width: 600px;
@@ -250,7 +251,197 @@ body
     bottom: -19px;
 }
 
+/* RESPONSIVE */
 
+@media all and (max-width: 376px)
+{
+    /* MAIN */
+    
+    body
+    {
+        background: url('bg-mobile.png') no-repeat;
+        background-color: hsl(229, 57%, 11%);
+        background-size: 100%;
+    }
+    
+    #container
+    {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .main
+    {
+        width: 320px;
+        height: 420px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* UPPER */
+    
+    .main-left
+    {
+        width: 320px;
+        border-radius: 10px 80px 10px 10px;
+        margin-bottom: 15px;
+        margin-right: 0;
+        height: 200px;
+        padding-left: 40px;
+        flex: none;
+    }
+    
+    /* LOGO */
+    
+    .logo img
+    {
+        width: 130px; 
+    }
+    
+    /* ICONS */
+    
+    .icons
+    {
+        width: 180px;
+        height: 60px;
+        margin-top: 10px;
+    }
+
+    .icons div
+    {
+        width: 50px;
+        height: 50px;
+    }
+
+    #document
+    {
+        width: 45%;
+    }
+
+    #folder
+    {
+        width: 50%;
+    }
+
+    #upload
+    {
+        width: 55%;
+    }
+    
+    /* BOTTOM */
+    
+    .main-right
+    {
+        position: relative;
+        width: 320px;
+        height: 170px;
+        flex: none;
+        margin-bottom: 35px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 40px;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
+    /* STORAGE LEFT */
+    
+    .storage-left 
+    {
+        position: absolute;
+        width: 180px;
+        height: 70px;
+        margin-bottom: 0;
+        display: flex;
+        top: 135px;
+        left: 70px;
+    }
+    
+    /* SPEECH BOX */
+    
+    .box 
+    {
+        width: 180px;
+        height: 70px;
+        border-radius: 10px;
+        font-size: 13px;
+    }
+    
+    .box strong
+    {
+        font-size: 40px;
+        margin-right: 10px;
+    }
+    
+    .sb:before 
+    {
+        display: none;
+    }
+    
+    /* USED STORAGE */
+    
+    .used-storage p
+    {
+        font-size: 14px;
+    }
+    
+    /* PROGRESS BAR */
+    
+    .progress {
+        position: relative;
+        margin: 7px auto 10px auto;
+        margin-left: 0;
+        padding: 0px;
+        width: 100%;
+        max-width: 600px;
+        background: #15224E;
+        border-radius: 15px;
+        height: 20px;
+        overflow: hidden;
+    }
+
+    .progress .progress-bar {
+        position: relative;
+        height: 100%;
+        width: 81%;
+        border-radius: 20px;
+        border: 3px solid #15224E;
+        background: linear-gradient(
+            to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+        );
+        transition: 0.3s;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    .white-dot
+    {
+        width: 10px;
+        height: 10px;
+    }
+
+    /* PROGRESS NUMBER */
+    
+    .steps
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .steps strong
+    {
+        font-size: 13px;
+    }
+    
+}
 
 
 
